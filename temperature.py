@@ -55,7 +55,7 @@ def c_to_f_convert():
             k=float(input("\nEnter the temp: "))
             result=k*(9/5)+32
             print("F =", k,"* (9/5) + 32")
-            print("\nConverted that", k,"°C is", result, "°F")
+            print("\nConverted that", k,"°C is", round(result,2), "°F")
             break
         except ValueError:
             print("\nYou just entered a letter, try again")
@@ -67,7 +67,7 @@ def c_to_k_convert():
             k=float(input("\nEnter the temp: "))
             result=k+273.15
             print("K =", k,"+ 273.15")
-            print("\nConverted that", k,"°C is", result, "°K")
+            print("\nConverted that", k,"°C is", round(result,2), "°K")
             break
         except ValueError:
             print("\nYou just entered a letter, try again")
@@ -79,7 +79,7 @@ def f_to_c_convert():
             k=float(input("\nEnter the temp: "))
             result=(k-32)*5/9
             print("C = (",k,"- 32 ) * 5/9")
-            print("\nConverted that", k,"°F is", result, "°C")
+            print("\nConverted that", k,"°F is", round(result,2), "°C")
             break
         except ValueError:
             print("\nYou just entered a letter, try again")
@@ -91,7 +91,7 @@ def f_to_k_convert():
             k=float(input("\nEnter the temp: "))
             result=(k-32)*5/9+273.15
             print("K = (",k,"- 32 ) * 5/9 + 273.15")
-            print("\nConverted that", k,"°F is", result, "°K")
+            print("\nConverted that", k,"°F is", round(result,2), "°K")
             break
         except ValueError:
             print("\nYou just entered a letter, try again")
@@ -103,7 +103,7 @@ def k_to_c_convert():
             k=float(input("\nEnter the temp: "))
             result=k-273.15
             print("C =",k,"- 273.15")
-            print("\nConverted that", k,"°K is", result, "°C")
+            print("\nConverted that", k,"°K is", round(result,2), "°C")
             break
         except ValueError:
             print("\nYou just entered a letter, try again")
@@ -115,7 +115,7 @@ def k_to_f_convert():
             k=float(input("\nEnter the temp: "))
             result=(k-273.15)*9/5+32
             print("F = (",k,"- 32 ) * 5/9 + 32")
-            print("\nConverted that", k,"°K is", result, "°F")
+            print("\nConverted that", k,"°K is", round(result,2), "°F")
             break
         except ValueError:
             print("\nYou just entered a letter, try again")
